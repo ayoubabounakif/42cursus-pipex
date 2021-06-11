@@ -42,7 +42,7 @@ typedef struct s_data
 /*
 ** Env main functions
 */
-t_dlist get_envs(char **env);
+t_dlist	get_envs(char **env);
 t_env	*env_create(char *key, char *value);
 /*
 ** Env utils and destructor

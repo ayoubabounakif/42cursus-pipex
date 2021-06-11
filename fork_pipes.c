@@ -103,7 +103,7 @@ void	fork_pipes(t_data *data, char **envp)
 
 		pipe(fds);
 
-		bin = bin_path(data->tokens_args[data->i][0], data->env); // First token
+		bin = bin_path(data->tokens_args[data->i][0], data->env);
 		if (bin == NULL)
 			exit(EXIT_FAILURE);
 
@@ -122,7 +122,7 @@ void	fork_pipes(t_data *data, char **envp)
 		data->i++;
 	}
 
-	bin = bin_path(data->tokens_args[data->i][0], data->env); // First token
+	bin = bin_path(data->tokens_args[data->i][0], data->env);
 	if (bin == NULL)
 		exit(EXIT_FAILURE);
 
